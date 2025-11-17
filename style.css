@@ -1,0 +1,102 @@
+header{
+    position: sticky;
+
+    nav{
+        display: flex;
+        padding: 20px;
+        justify-content: space-between;
+
+        .logo{
+            font-size: 30px;
+            color: black;
+        }
+
+        ul{
+            list-style: none;
+        display: flex;
+        gap: 20px;
+
+        }
+
+        a{
+        text-decoration: none;
+        color: brown;
+        }
+        a:hover{
+            color: black;
+        }
+
+    }
+}
+
+
+
+section{
+    max-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#home{
+    background: url("images/milktea.jpg") no-repeat center center/cover;
+    background-attachment: fixed;
+    color: white;
+    text-shadow: 2px 2px rgba(165, 42, 42, 0.564);
+    font-size: 50px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    
+    .button-menu {
+        background-color: brown;
+        color: white;
+        width: 200px;
+        height: 50px;
+        font-size: 20px;
+        border-radius: 10px;
+        border: none;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .button:hover{
+         background-color: rgb(97, 24, 24);
+    }
+}
+#menu{
+    .menu-container{
+        display: flex;
+        min-width: 300px;
+        flex-wrap: wrap;   
+        gap: 20px; 
+        justify-content: center;
+        align-items: center;
+
+        .card{
+            border: 1px solid brown;
+            border-radius:10px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            .button{
+                background-color: brown;
+                text-decoration: none;
+                color: white;
+                padding: 10px;
+                text-align: center;
+                border-radius: 10px;
+                
+            }
+            .button:hover{
+                    background-color: rgb(97, 24, 24);
+            }
+        }
+    }
+}

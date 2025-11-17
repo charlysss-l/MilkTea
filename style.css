@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 header{
     position: sticky;
 
@@ -37,6 +43,7 @@ section{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 #home{
     background: url("images/milktea.jpg") no-repeat center center/cover;
@@ -51,7 +58,7 @@ section{
     align-items: center;
     padding: 20px;
     text-align: center;
-    
+
     .button-menu {
         background-color: brown;
         color: white;
@@ -99,4 +106,13 @@ section{
             }
         }
     }
+}
+
+#location{
+    background: url("images/shop.jpg") no-repeat center center/cover;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    
 }

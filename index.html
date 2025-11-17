@@ -21,7 +21,7 @@
     <section id="home">
         <h1>Welcome to Milktea</h1>
         <p>Your favorite place for delicious milktea.</p>
-        <a class="button-menu" href="#menu">Order Now </a>
+        <a class="button-menu" href="#order-now">Order Now </a>
     </section>
     <section id="menu">
         <h1>Our Menu</h1>
@@ -30,40 +30,75 @@
                 <h2>Classic Milktea</h2>
                 <p>A timeless blend of black tea and creamy milk.</p>
                 <span class="price">$3.50</span>
-                <a class="button" href="#">Order Now</a>
+                <a class="button" href="#order-now">Order Now</a>
             </div>
             <div class="card">
                 <h2>Taro Milktea</h2>
                 <p>A sweet and nutty flavor made from taro root.</p>
                 <span class="price">$4.00</span>
-                <a class="button" href="#">Order Now</a>
+                <a class="button" href="#order-now">Order Now</a>
             </div>
             <div class="card">
                 <h2>Matcha Milktea</h2>
                 <p>A refreshing blend of green tea and milk.</p>
                 <span class="price">$4.50</span>
-                <a class="button" href="#">Order Now</a>
+                <a class="button" href="#order-now">Order Now</a>
             </div>
             <div class="card">
                 <h2>Brown Sugar Milktea</h2>
                 <p>A rich and indulgent drink with brown sugar syrup.</p>
                 <span class="price">$4.75</span>
-                <a class="button" href="#">Order Now</a>
+                <a class="button" href="#order-now">Order Now</a>
             </div>
             <div class="card">
                 <h2>Fruit Tea</h2>
                 <p>A refreshing blend of assorted fruits and tea.</p>
                 <span class="price">$4.25</span>
-                <a class="button" href="#">Order Now</a>
+                <a class="button" href="#order-now">Order Now</a>
             </div>
             <div class="card">
                 <h2>Oolong Milktea</h2>
                 <p>A smooth and aromatic tea with a hint of milk.</p>
                 <span class="price">$4.00</span>
-                <a class="button" href="#">Order Now</a>
+                <a class="button" href="#order-now">Order Now</a>
             </div>
         </div>
     </section>
+    <section id="order-now">
+       <h1>Ready to Order?</h1>
+       <form action="#" method="post" >
+        <label for="name">Name:</label>
+        <input placeholder="Your Name">
+
+        <label for="drink">Select Drink</label>
+        <select name="drink" id="drink" required>
+            <option value="">Choose your drink</option>
+            <option value="classic">Classic Milktea</option>
+            <option value="taro">Taro Milktea</option>
+            <option value="matcha">Matcha Milktea</option>
+            <option value="brown-sugar">Brown Sugar Milktea</option>
+            <option value="fruit-tea">Fruit Tea</option>
+            <option value="oolong">Oolong Milktea</option>
+        </select>
+
+        <label for="payment">Method of Payment:</label>
+        <select name="payment" id="payment" required>
+            <option value=""> Choose your payment</option>
+            <option value="Cash">Cash</option>
+            <option value="GCash">GCash</option>
+            <option value="Bank">Bank</option>
+        </select>
+
+        <label for="quantity">Quantity</label>
+        <input type="number" id="quantity" name="quantity" placeholder="1" min="1" required>
+        
+        <label for="notes">Additional Notes:</label>
+        <textarea name="notes" id="notes" placeholder="Any special request?"></textarea>
+        
+        <button type="submit" class="submit">Place Order</button>
+       </form>
+    </section>
+    
     <section id="location">
         <div class="location-container">
             <h1>Our Location</h1>

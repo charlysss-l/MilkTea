@@ -101,6 +101,7 @@ section{
             display: flex;
             flex-direction: column;
             gap: 10px;
+
             .button{
                 background-color: brown;
                 text-decoration: none;
@@ -111,9 +112,14 @@ section{
                 
             }
             .button:hover{
-                    background-color: rgb(97, 24, 24);
+                background-color: rgb(97, 24, 24);
             }
+
         }
+            .card:hover{
+               transform: translateY(-8px);
+               
+            }
     }
 }
 
@@ -137,4 +143,31 @@ footer{
     color: white;
     text-align: center;
     padding: 10px;
+}
+
+@media (max-width:480){
+    #home h1{
+        font-size: 20px;
+    }
+    #menu .menu-container .card{
+        min-width: 200px;
+    }
+    #location{
+        font-size: 16px;
+    }
+}
+@media (max-width:768px){
+    #menu .menu-container .card{
+        min-width: 250px;
+    }
+}
+@media (max-width:1366px){
+    #menu .menu-container .card{
+        min-width: 300px;
+    }
+}
+@media (max-width:1920px){
+    #menu .menu-container .card{
+        min-width: 350px;
+    }
 }

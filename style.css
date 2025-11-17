@@ -38,19 +38,16 @@ header{
 
 
 section{
-    max-height: 100vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    padding: 80px 20px;
+
 }
 #home{
     background: url("images/milktea.jpg") no-repeat center center/cover;
     background-attachment: fixed;
-    color: white;
-    text-shadow: 2px 2px rgba(165, 42, 42, 0.564);
-    font-size: 50px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -58,7 +55,19 @@ section{
     align-items: center;
     padding: 20px;
     text-align: center;
+    height: 100vh;
+    gap: 20px;
 
+    h1{
+    color: brown;
+    text-shadow: 2px 2px rgba(255, 255, 255, 0.564);
+    font-size: 50px;
+    }
+    p{
+        font-size:20px;
+        color: white;
+        text-shadow: 1px 1px black;
+    }
     .button-menu {
         background-color: brown;
         color: white;
@@ -72,7 +81,7 @@ section{
         align-items: center;
         justify-content: center;
     }
-    .button:hover{
+    .button-menu:hover{
          background-color: rgb(97, 24, 24);
     }
 }
@@ -116,6 +125,16 @@ section{
     color: white;
     
     .location-container{
-        background-color: white;
+        background-color: rgba(255, 255, 255, 0.335);
+        color: black;
+        padding: 20px;
+        border-radius:10px;
+        text-align: center;
     }
+}
+footer{
+    background-color: brown;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
